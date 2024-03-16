@@ -1,13 +1,28 @@
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grid Example</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div id="grid-container"></div>
+<!DOCTYPE html>
+<html>
 
-<script src="index.js"></script>
+<head>
+    <title>Sokoban game</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div id="map1" class="container">
+        </div>
+
+        <div id="msg"></div>
+        <input type="button" value="Last Level" onclick="changeLevel(-1)">
+        <input type="button" value="Next Level" onclick="changeLevel(1)">
+        <input type="button" value="Reset Level" onclick="changeLevel(0)">
+    </div>
+
+
+    <script src="/javascript/levels.js"></script>
+    <script src="/javascript/map.js"></script>
+    <script src="/javascript/move.js"></script>
 </body>
+
 </html>
