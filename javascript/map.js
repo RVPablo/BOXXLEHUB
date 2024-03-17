@@ -74,7 +74,7 @@ function initMap() {
         let messageError = document.createElement("div");
         messageError.className = "msgerr";
         if (countBox != countTarget) {
-            messageError.innerHTML = "Problem on this level, you have " + countBox + " boxes and " + countTarget + " targets. <br/>";
+            messageError.innerHTML = "This level doesnt work, you have " + countBox + " boxes and " + countTarget + " targets. <br/>";
         }
         if (countPlayer != 1) {
             messageError.innerHTML = messageError.innerHTML + "Problem on this level, you have " + countPlayer + " player, You must just have one player.";
